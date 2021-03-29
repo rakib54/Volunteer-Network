@@ -1,16 +1,16 @@
 import React from 'react';
 
 const Event = ({event}) => {
-    console.log(event);
+    // console.log(event);
     const handleDelete = (id) =>{
-    //     fetch(`http://localhost:5000/deleteEvent/${id}`,{
-    //         method :'DELETE',
+        fetch(`https://agile-falls-19615.herokuapp.com/deleteEvent/${id}`,{
+            method :'DELETE',
 
-    //     })
-    //     .then(res =>res.json())
-    //     .then(result =>{
-    //        console.log(result);
-    //     })
+        })
+        .then(res =>res.json())
+        .then(result =>{
+           console.log(result);
+        })
 
     }
     return (

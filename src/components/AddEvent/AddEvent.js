@@ -10,7 +10,7 @@ const AddEvent = () => {
             name: data.name,
             imageURL: imageURL
         }
-        const url = `http://localhost:5000/addEvent`;
+        const url = `https://agile-falls-19615.herokuapp.com/addEvent`;
         console.log(eventData);
         fetch(url, {
             method: 'POST',
